@@ -67,7 +67,7 @@ while ($line = <IN1>)
 	chomp($line);
 	# Split the line into student name and student id using the :
 	#  as the separator
-	@sinfo = split / *: */, $line;
+	@sinfo = split /\s*:\s*/, $line;
 	# Store the student name
 	$sname = $sinfo[0];
 	# Check if the name has the new longest length and store if does
